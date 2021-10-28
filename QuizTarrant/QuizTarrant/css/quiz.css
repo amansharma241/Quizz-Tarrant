@@ -1,0 +1,126 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --main-background: #aad7f0;
+  --ques-color: #fcd3c7;
+  --logo-color: #5078de;
+  --logo2-color: #e3448e;
+  --color1: #ffcce9;
+  --color2:rgb(228, 228, 228);
+}
+
+.image {
+  width: 10%;
+}
+
+.logo {
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* vertical-align: middle; */
+}
+#logo-text {
+  /* font-family: 'Lora', serif; */
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 5rem;
+  color: var(--logo-color);
+}
+#logo2 {
+  color: var(--logo2-color);
+}
+
+#display{
+  background-color: var(--ques-color);
+}
+
+#ques-no{
+  color: #2d89da;
+  font-size: 40px;
+  font-weight: 900;
+}
+#score{
+  color: #2d89da;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#ques-ques{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+
+
+.choice-prefix {
+  color: aliceblue;
+  padding: 10px 0;
+  background-color: blue;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.choice-text {
+  /* text-align: center; */
+  background-color: var(--color2);
+  border: 2px solid red;
+  border-left : none;
+}
+
+.choice-text:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.button {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.btn-hover-effect {
+  color: rgba(255, 255, 255, 0.767);
+  font-size: 30px;
+  border: 2px groove rgb(231, 15, 15);
+  background: #c90165d8;
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease; 
+}
+
+.btn-hover-effect:hover {
+  color: #070707;
+  animation-name: play-effect;
+  animation-duration: 0.4s;
+  animation-iteration-count: 2;
+}  
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+#progressBar {
+  width: 15rem;
+  height: 15px;
+  border-radius: 8px;
+}
+
+#progressBarFull {
+  height: 15px;
+  background-color: #2d89da;
+  border-radius: 8px;
+  width: 0%;
+}
